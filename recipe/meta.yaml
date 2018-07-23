@@ -3,7 +3,7 @@ package:
   version: "1.9.0"
 
 build:
-  number: 0
+  number: 1
   #  Google supplies whl files on PyPI for:
   # - Linux: Python 2.7, 3.3, 3.4, 3.5 and 3.6
   # - OS X: Python 2.7, 3.3, 3.4, 3.5 and 3.6
@@ -26,6 +26,7 @@ requirements:
     - python
     - pip
   run:
+    - glibc >= 2.16
     - python
     - absl-py >=0.1.6
     - astor >=0.6.0
